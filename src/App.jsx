@@ -5,6 +5,7 @@ import RightSidebar from "./components/RightSidebar";
 import ShareModal from "./components/ShareModal";
 import ChatModal from "./components/ChatModal";
 import MobileSidebarOverlay from "./components/MobileSidebarOverlay";
+import CreatePost from "./components/CreatePost";
 import { FaUser } from "react-icons/fa";
 import { db } from "./firebaseConfig";
 import {
@@ -160,6 +161,9 @@ const App = () => {
                 <div className="max-w-screen-xl mx-auto px-6 flex items-center justify-between">
                     <h1 className="text-2xl font-bold">Instagram</h1>
                     <div className="flex space-x-6 text-xl cursor-pointer">
+                        <CreatePost
+                            onClick={() => alert("Open Create Post Modal")}
+                        />
                         <FaUser onClick={() => setShowSidebar(!showSidebar)} />
                     </div>
                 </div>
