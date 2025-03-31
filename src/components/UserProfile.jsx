@@ -71,7 +71,13 @@ const UserProfile = ({ username, setShowProfile }) => {
                         <div
                             key={i}
                             className="w-full aspect-square bg-gray-100 rounded-md hover:opacity-90 transition"
-                        />
+                        >
+                            <img
+                                src={`https://i.pravatar.cc/150?img=${i + 1}`}
+                                alt={`Post ${i + 1}`}
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
                     ))}
                 </div>
             </div>
